@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ft">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+</head>
+<body>
+    <!-- Add a placeholder for the Twitch embed -->
+<div id="twitch-embed"></div>
+
+<!-- Load the Twitch embed script -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+<script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    channel: "okiles"
+  });
+</script>
+<iframe id="twitch-chat-embed"
+        src="https://www.twitch.tv/embed/okiles/chat?parent=dev.twitch.tv"
+        height="500"
+        width="350">
+</iframe>
+</body>
+</html> 
