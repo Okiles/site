@@ -1,28 +1,44 @@
 <!DOCTYPE html>
-<html lang="ft">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Add a placeholder for the Twitch embed -->
-<div id="twitch-embed"></div>
-
-<!-- Load the Twitch embed script -->
-<script src="https://player.twitch.tv/js/embed/v1.js"></script>
-
-<!-- Create a Twitch.Player object. This will render within the placeholder div -->
-<script type="text/javascript">
-  new Twitch.Player("twitch-embed", {
-    channel: "okiles"
-  });
-</script>
-<iframe id="twitch-chat-embed"
-        src="https://www.twitch.tv/embed/okiles/chat?parent=okiles.github.io/site/"
-        height="500"
-        width="350">
-</iframe>
+  <div class="wrapper" id="header">
+    <header><h1>Okiles.fr</h1></header>
+    <nav>
+      <a href="#" id="selected">Accueil</a>
+      <a href="okiles-in-the-multiverse.html">Okiles in the multiverse</a>
+      <a href="twitch.html">Twitch</a>
+      <a href="youtube.html">Youtube</a>
+      <a href="games.html">Jeux</a>
+      <a href="articles.html">Articles</a>
+    </nav>
+  </div>
+  <section>
+    <article></article>
+    <aside>
+      <h2>Actualités</h2>
+      <hr>
+      <a href="" class="article">
+        <div class="actu">
+          <img src="https://s1.1zoom.me/big0/613/368800-blackangel.jpg" alt="" class="actuImg">
+          <h3 class="titre">Nouveau jeu</h3>
+          <hr>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quae corrupti esse placeat modi laudantium quisquam doloribus sed soluta reiciendis illo quasi iure nostrum, ut optio laborum aperiam dolorem sapiente.</p>
+        </div>
+      </a>
+    </aside>
+  </section>
+  <footer>
+    <p>&copy; Okiles, 2022</p>
+  </footer>
 </body>
 </html> 

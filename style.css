@@ -1,0 +1,118 @@
+*{
+    scroll-behavior: smooth;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 150, 0);
+}
+
+::selection{
+    color: white;
+    background-color: rgb(255, 150, 0);
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    margin-left: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 10px;
+    padding: 20px;
+}
+
+nav a:hover{
+    background-color: rgb(255, 150, 0);
+}
+
+a#selected{
+    color: rgb(255, 150, 0);
+}
+
+a#selected:hover{
+    background-color: black;
+}
+
+#header{
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+section{
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+aside{
+    text-align: center;
+    border-left: 2px solid black;
+    overflow: hidden;
+}
+
+h2,h3,p{
+    color: black;
+}
+
+.actu{
+    border: 1px solid black;
+    width: 95%;
+    margin: auto;
+    color: black;
+    transition: 0.24s;
+}
+
+.actu p{
+    text-align: justify;
+    margin: 10px;
+}
+
+.actu hr{
+    width: 80%;
+}
+
+.actuImg{
+    width: 90%;
+    margin: 4%;
+}
+
+a .actu:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+footer{
+    text-align: center;
+    height: 50px;
+}
+
+footer p{
+    color: white;
+}
