@@ -113,6 +113,15 @@ footer{
     height: 50px;
 }
 
+footer .wrapper{
+    margin: 15px;
+}
+
 footer p{
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
     color: white;
 }
