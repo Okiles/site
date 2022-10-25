@@ -25,13 +25,20 @@
     </nav>
   </div>
   <section>
-    <article>
+    <article class="wrapper">
+      <div class="about">
+        <img src="https://s1.1zoom.me/big0/613/368800-blackangel.jpg"  id="miniaOkiles" alt="miniature">
+        <p class="title">Okiles in the multiverse</p>
+        <p class="date">01/01/2023</p>
+        <p class="recap">Okiles est un chat qui peut voyager dans le multivers, tout à fait banal non ? Mais il ne contrôle pas son pouvoir ... En effet, toute les 24 heures, Okiles se téléporte dans un monde aléatoire.</p>
+        <p class="recap">Suivez les péripéties de ce drôle de chat en lisant le chapitre 1 dès maintenant !</p>
+      </div>
       <div class="reader">
         <div class="controls">
             <a href=""><i class="fa-solid fa-circle-left"></i> Page précédente</a>
-            <select name="Chapitre" size="1">
-              <option>Chapitre 1</option>
-              <option>Chapitre 2</option>
+            <select id="nbChap" name="Chapitre" size="1">
+              <option value="0">Chapitre 1</option>
+              <option value="1">Chapitre 2</option>
             </select>
             <a href="">Page suivante <i class="fa-solid fa-circle-right"></i></a>
         </div>
@@ -39,6 +46,12 @@
           <div class="previous"><i class="fa-solid fa-circle-left"></i></div>
           <div class="next"><i class="fa-solid fa-circle-right"></i></div>
         </div>
+      </div>
+      <div class="chapList">
+        <p>Liste des chapitres</p>
+        <ul>
+          <li><a href="#">Chapitre 1</a></li>
+        </ul>
       </div>
     </article>
   </section>
