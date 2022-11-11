@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Youtube</title>
+  <title>Twitch</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,20 +19,23 @@
       <a href="index.html">Accueil</a>
       <a href="shop.html">Boutique</a>
       <a href="okiles-in-the-multiverse.html">Okiles in the multiverse</a>
-      <a href="twitch.html">Twitch</a>
-      <a href="#" id="selected">Youtube</a>
+      <a href="#" id="selected">Twitch</a>
+      <a href="youtube.html">Youtube</a>
       <a href="games.html">Jeux</a>
       <a href="articles.html">Articles</a>
     </nav>
   </div>
-  <section class="youtube">
-    <article class="last">
-      <h5>Dernière vidéo Youtube</h5>
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/wIi0L5d3xEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <p>L'aventure de Multicort Soluce complète  </p>
-    </article>
+  <section class="twitch">
+    <div id="twitch-embed"></div>
+      <script src="https://embed.twitch.tv/embed/v1.js"></script>
+      <script type="text/javascript">
+        new Twitch.Embed("twitch-embed", {
+          width: "90%",
+          height: 600,
+          channel: "okiles",
+          theme: "dark",
+        });
+      </script>
   </section>
   <footer>
     <div class="wrapper">

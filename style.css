@@ -239,6 +239,11 @@ section.youtube{
     text-align: center;
 }
 
+.twitch{
+    text-align: center;
+    padding: 75px;
+}
+
 footer{
     text-align: center;
     height: 50px;
@@ -287,6 +292,10 @@ footer a:hover i{
     .hamburger{
         display: block;
         font-size: x-large;
+    }
+
+    .twitch{
+        padding: 10px;
     }
 
     #header{
