@@ -1,10 +1,22 @@
+:root{
+    --background-color: #fff;
+    --text-color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #000000; /* Couleur de fond sombre */
+      --text-color: #ffffff; /* Couleur de texte clair */
+    }
+}
+
 *{
     scroll-behavior: smooth;
     font-family: 'Kanit', sans-serif;
 }
 
 body{
-    background-color: black;
+    background-color: var(--background-color);
 }
 
 ::-webkit-scrollbar{
@@ -17,6 +29,7 @@ body{
 
 ::-webkit-scrollbar-thumb {
     background-color: rgb(255, 150, 0);
+    border-radius: 50px;
 }
 
 ::selection{
@@ -44,16 +57,13 @@ header h1{
 nav a{
     text-decoration: none;
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
     color: white;
 }
 
-nav a:hover{
+nav a:hover, a#selected{
     background-color: rgb(255, 150, 0);
-}
-
-a#selected{
-    color: rgb(255, 150, 0);
+    border-radius: 10px;
 }
 
 a#selected:hover{
@@ -91,6 +101,7 @@ article h4{
 
 .partTitle{
     color: white;
+    background-color: #000;
     text-align: center;
     font-size: xx-large;
 }
@@ -115,6 +126,11 @@ section.partners a{
     border-left: 2px solid black;
     border-right: 2px solid black;
     transition: all 0.2s cubic-bezier(0.17, 0.67, 0.38, 0.75);
+}
+
+img#instang{
+    width: 250px;
+    margin-top: 20px;
 }
 
 .actu{
@@ -256,6 +272,7 @@ section.youtube{
     height: 100vh;
 }
 
+
 .last h5{
     text-align: center;
     font-size: xx-large;
@@ -275,6 +292,7 @@ section.youtube{
 footer{
     text-align: center;
     height: 50px;
+    background-color: #000;
 }
 
 footer .wrapper{
